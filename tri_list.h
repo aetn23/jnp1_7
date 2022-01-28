@@ -20,7 +20,7 @@ concept check_type_condition = (std::same_as<T, T1> || std::same_as<T, T2> || st
 
 //todo delete default args, coz not needed
 template <typename T>
-T identity(T arg = T{}) {
+T identity(T arg) {
     return arg;
 }
 
